@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1526F38024B7D662005F68BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1526F37F24B7D662005F68BB /* GoogleService-Info.plist */; };
 		1580377924B7782D000E2179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377824B7782D000E2179 /* AppDelegate.swift */; };
 		1580377B24B7782D000E2179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377A24B7782D000E2179 /* SceneDelegate.swift */; };
 		1580377D24B7782D000E2179 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377C24B7782D000E2179 /* LoginView.swift */; };
@@ -19,7 +20,6 @@
 		158037AB24B7AE13000E2179 /* DicoItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037AA24B7AE13000E2179 /* DicoItemRow.swift */; };
 		158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B024B7AFF1000E2179 /* DicoEntry.swift */; };
 		158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B624B7C4E1000E2179 /* SearchBar.swift */; };
-		158037B924B7C806000E2179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158037B824B7C806000E2179 /* GoogleService-Info.plist */; };
 		158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */; };
 		2AC8E510E2DEC576FB00A9A6 /* Pods_ArgoDico_ArgoDicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9651C78E720722499B5B12C2 /* Pods_ArgoDico_ArgoDicoUITests.framework */; };
 		848D005A81C252457BD92979 /* Pods_ArgoDicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */; };
@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		143427177DC865386C078732 /* Pods-ArgoDicoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDicoTests.release.xcconfig"; path = "Target Support Files/Pods-ArgoDicoTests/Pods-ArgoDicoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1526F37F24B7D662005F68BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1580377524B7782D000E2179 /* ArgoDico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgoDico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1580377824B7782D000E2179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1580377A24B7782D000E2179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		158037AA24B7AE13000E2179 /* DicoItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoItemRow.swift; sourceTree = "<group>"; };
 		158037B024B7AFF1000E2179 /* DicoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntry.swift; sourceTree = "<group>"; };
 		158037B624B7C4E1000E2179 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		158037B824B7C806000E2179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryRepository.swift; sourceTree = "<group>"; };
 		1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDicoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +137,7 @@
 				1580377E24B7782E000E2179 /* Assets.xcassets */,
 				1580378324B7782E000E2179 /* LaunchScreen.storyboard */,
 				1580378624B7782E000E2179 /* Info.plist */,
-				158037B824B7C806000E2179 /* GoogleService-Info.plist */,
+				1526F37F24B7D662005F68BB /* GoogleService-Info.plist */,
 				1580378024B7782E000E2179 /* Preview Content */,
 			);
 			path = ArgoDico;
@@ -368,7 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1580378524B7782E000E2179 /* LaunchScreen.storyboard in Resources */,
-				158037B924B7C806000E2179 /* GoogleService-Info.plist in Resources */,
+				1526F38024B7D662005F68BB /* GoogleService-Info.plist in Resources */,
 				1580378224B7782E000E2179 /* Preview Assets.xcassets in Resources */,
 				1580377F24B7782E000E2179 /* Assets.xcassets in Resources */,
 			);
