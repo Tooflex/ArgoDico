@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1580377924B7782D000E2179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377824B7782D000E2179 /* AppDelegate.swift */; };
+		1580377B24B7782D000E2179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377A24B7782D000E2179 /* SceneDelegate.swift */; };
+		1580377D24B7782D000E2179 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580377C24B7782D000E2179 /* LoginView.swift */; };
+		1580377F24B7782E000E2179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1580377E24B7782E000E2179 /* Assets.xcassets */; };
+		1580378224B7782E000E2179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1580378124B7782E000E2179 /* Preview Assets.xcassets */; };
+		1580378524B7782E000E2179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1580378324B7782E000E2179 /* LaunchScreen.storyboard */; };
+		1580379024B7782F000E2179 /* ArgoDicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580378F24B7782F000E2179 /* ArgoDicoTests.swift */; };
+		1580379B24B7782F000E2179 /* ArgoDicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580379A24B7782F000E2179 /* ArgoDicoUITests.swift */; };
+		158037A924B7ADC2000E2179 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037A824B7ADC2000E2179 /* MainView.swift */; };
+		158037AB24B7AE13000E2179 /* DicoItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037AA24B7AE13000E2179 /* DicoItemRow.swift */; };
+		158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B024B7AFF1000E2179 /* DicoEntry.swift */; };
+		158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B624B7C4E1000E2179 /* SearchBar.swift */; };
+		158037B924B7C806000E2179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158037B824B7C806000E2179 /* GoogleService-Info.plist */; };
+		158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */; };
+		2AC8E510E2DEC576FB00A9A6 /* Pods_ArgoDico_ArgoDicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9651C78E720722499B5B12C2 /* Pods_ArgoDico_ArgoDicoUITests.framework */; };
+		848D005A81C252457BD92979 /* Pods_ArgoDicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */; };
+		CDF2AF31C80794957848C29E /* Pods_ArgoDico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1580378C24B7782F000E2179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1580376D24B7782D000E2179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1580377424B7782D000E2179;
+			remoteInfo = ArgoDico;
+		};
+		1580379724B7782F000E2179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1580376D24B7782D000E2179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1580377424B7782D000E2179;
+			remoteInfo = ArgoDico;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		143427177DC865386C078732 /* Pods-ArgoDicoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDicoTests.release.xcconfig"; path = "Target Support Files/Pods-ArgoDicoTests/Pods-ArgoDicoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1580377524B7782D000E2179 /* ArgoDico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgoDico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1580377824B7782D000E2179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1580377A24B7782D000E2179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1580377C24B7782D000E2179 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1580377E24B7782E000E2179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1580378124B7782E000E2179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1580378424B7782E000E2179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1580378624B7782E000E2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1580378B24B7782F000E2179 /* ArgoDicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgoDicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1580378F24B7782F000E2179 /* ArgoDicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgoDicoTests.swift; sourceTree = "<group>"; };
+		1580379124B7782F000E2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1580379624B7782F000E2179 /* ArgoDicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgoDicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1580379A24B7782F000E2179 /* ArgoDicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgoDicoUITests.swift; sourceTree = "<group>"; };
+		1580379C24B7782F000E2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158037A824B7ADC2000E2179 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		158037AA24B7AE13000E2179 /* DicoItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoItemRow.swift; sourceTree = "<group>"; };
+		158037B024B7AFF1000E2179 /* DicoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntry.swift; sourceTree = "<group>"; };
+		158037B624B7C4E1000E2179 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		158037B824B7C806000E2179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryRepository.swift; sourceTree = "<group>"; };
+		1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDicoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DCE8AD6F2C8409564DA43C /* Pods-ArgoDicoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDicoTests.debug.xcconfig"; path = "Target Support Files/Pods-ArgoDicoTests/Pods-ArgoDicoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59D6801DDBCD25D5CED2BADE /* Pods-ArgoDico-ArgoDicoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDico-ArgoDicoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArgoDico-ArgoDicoUITests/Pods-ArgoDico-ArgoDicoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		714F77A8D0C5FAA8C676A9EC /* Pods-ArgoDico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDico.debug.xcconfig"; path = "Target Support Files/Pods-ArgoDico/Pods-ArgoDico.debug.xcconfig"; sourceTree = "<group>"; };
+		9021EEE7EE1C326D09C7AE80 /* Pods-ArgoDico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDico.release.xcconfig"; path = "Target Support Files/Pods-ArgoDico/Pods-ArgoDico.release.xcconfig"; sourceTree = "<group>"; };
+		9651C78E720722499B5B12C2 /* Pods_ArgoDico_ArgoDicoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDico_ArgoDicoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB19E336A82FD488FC778AD /* Pods-ArgoDico-ArgoDicoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDico-ArgoDicoUITests.release.xcconfig"; path = "Target Support Files/Pods-ArgoDico-ArgoDicoUITests/Pods-ArgoDico-ArgoDicoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1580377224B7782D000E2179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF2AF31C80794957848C29E /* Pods_ArgoDico.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580378824B7782F000E2179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D005A81C252457BD92979 /* Pods_ArgoDicoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580379324B7782F000E2179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC8E510E2DEC576FB00A9A6 /* Pods_ArgoDico_ArgoDicoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1580376C24B7782D000E2179 = {
+			isa = PBXGroup;
+			children = (
+				1580377724B7782D000E2179 /* ArgoDico */,
+				1580378E24B7782F000E2179 /* ArgoDicoTests */,
+				1580379924B7782F000E2179 /* ArgoDicoUITests */,
+				1580377624B7782D000E2179 /* Products */,
+				6D1F2823F2A9CF6260E7F0C7 /* Pods */,
+				7C81BC46183515D5677D23A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1580377624B7782D000E2179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1580377524B7782D000E2179 /* ArgoDico.app */,
+				1580378B24B7782F000E2179 /* ArgoDicoTests.xctest */,
+				1580379624B7782F000E2179 /* ArgoDicoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1580377724B7782D000E2179 /* ArgoDico */ = {
+			isa = PBXGroup;
+			children = (
+				158037BD24B7CE3B000E2179 /* ViewModels */,
+				158037BA24B7CB46000E2179 /* Repositories */,
+				158037B524B7B5C5000E2179 /* App */,
+				158037B224B7B220000E2179 /* Utils */,
+				158037AF24B7AFD1000E2179 /* Models */,
+				158037AC24B7AF5C000E2179 /* UI */,
+				1580377E24B7782E000E2179 /* Assets.xcassets */,
+				1580378324B7782E000E2179 /* LaunchScreen.storyboard */,
+				1580378624B7782E000E2179 /* Info.plist */,
+				158037B824B7C806000E2179 /* GoogleService-Info.plist */,
+				1580378024B7782E000E2179 /* Preview Content */,
+			);
+			path = ArgoDico;
+			sourceTree = "<group>";
+		};
+		1580378024B7782E000E2179 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1580378124B7782E000E2179 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1580378E24B7782F000E2179 /* ArgoDicoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1580378F24B7782F000E2179 /* ArgoDicoTests.swift */,
+				1580379124B7782F000E2179 /* Info.plist */,
+			);
+			path = ArgoDicoTests;
+			sourceTree = "<group>";
+		};
+		1580379924B7782F000E2179 /* ArgoDicoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1580379A24B7782F000E2179 /* ArgoDicoUITests.swift */,
+				1580379C24B7782F000E2179 /* Info.plist */,
+			);
+			path = ArgoDicoUITests;
+			sourceTree = "<group>";
+		};
+		158037AC24B7AF5C000E2179 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				158037AE24B7AF73000E2179 /* Screens */,
+				158037AD24B7AF67000E2179 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		158037AD24B7AF67000E2179 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				158037AA24B7AE13000E2179 /* DicoItemRow.swift */,
+				158037B624B7C4E1000E2179 /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		158037AE24B7AF73000E2179 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1580377C24B7782D000E2179 /* LoginView.swift */,
+				158037A824B7ADC2000E2179 /* MainView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		158037AF24B7AFD1000E2179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				158037B024B7AFF1000E2179 /* DicoEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		158037B224B7B220000E2179 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		158037B524B7B5C5000E2179 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1580377824B7782D000E2179 /* AppDelegate.swift */,
+				1580377A24B7782D000E2179 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		158037BA24B7CB46000E2179 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		158037BD24B7CE3B000E2179 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6D1F2823F2A9CF6260E7F0C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				714F77A8D0C5FAA8C676A9EC /* Pods-ArgoDico.debug.xcconfig */,
+				9021EEE7EE1C326D09C7AE80 /* Pods-ArgoDico.release.xcconfig */,
+				59D6801DDBCD25D5CED2BADE /* Pods-ArgoDico-ArgoDicoUITests.debug.xcconfig */,
+				BFB19E336A82FD488FC778AD /* Pods-ArgoDico-ArgoDicoUITests.release.xcconfig */,
+				31DCE8AD6F2C8409564DA43C /* Pods-ArgoDicoTests.debug.xcconfig */,
+				143427177DC865386C078732 /* Pods-ArgoDicoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C81BC46183515D5677D23A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */,
+				9651C78E720722499B5B12C2 /* Pods_ArgoDico_ArgoDicoUITests.framework */,
+				30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1580377424B7782D000E2179 /* ArgoDico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1580379F24B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDico" */;
+			buildPhases = (
+				232782F2C1A06AEC92B25DB2 /* [CP] Check Pods Manifest.lock */,
+				1580377124B7782D000E2179 /* Sources */,
+				1580377224B7782D000E2179 /* Frameworks */,
+				1580377324B7782D000E2179 /* Resources */,
+				6F4C882CA136C0355DAA8D77 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgoDico;
+			productName = ArgoDico;
+			productReference = 1580377524B7782D000E2179 /* ArgoDico.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1580378A24B7782F000E2179 /* ArgoDicoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158037A224B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDicoTests" */;
+			buildPhases = (
+				720AB4DC0F3311214FC70F9D /* [CP] Check Pods Manifest.lock */,
+				1580378724B7782F000E2179 /* Sources */,
+				1580378824B7782F000E2179 /* Frameworks */,
+				1580378924B7782F000E2179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1580378D24B7782F000E2179 /* PBXTargetDependency */,
+			);
+			name = ArgoDicoTests;
+			productName = ArgoDicoTests;
+			productReference = 1580378B24B7782F000E2179 /* ArgoDicoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1580379524B7782F000E2179 /* ArgoDicoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158037A524B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDicoUITests" */;
+			buildPhases = (
+				FB88933A8877E0794CEE2079 /* [CP] Check Pods Manifest.lock */,
+				1580379224B7782F000E2179 /* Sources */,
+				1580379324B7782F000E2179 /* Frameworks */,
+				1580379424B7782F000E2179 /* Resources */,
+				C42FBB573F67BE5DFAB51747 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1580379824B7782F000E2179 /* PBXTargetDependency */,
+			);
+			name = ArgoDicoUITests;
+			productName = ArgoDicoUITests;
+			productReference = 1580379624B7782F000E2179 /* ArgoDicoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1580376D24B7782D000E2179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Otourou Da Costa";
+				TargetAttributes = {
+					1580377424B7782D000E2179 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					1580378A24B7782F000E2179 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1580377424B7782D000E2179;
+					};
+					1580379524B7782F000E2179 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1580377424B7782D000E2179;
+					};
+				};
+			};
+			buildConfigurationList = 1580377024B7782D000E2179 /* Build configuration list for PBXProject "ArgoDico" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1580376C24B7782D000E2179;
+			productRefGroup = 1580377624B7782D000E2179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1580377424B7782D000E2179 /* ArgoDico */,
+				1580378A24B7782F000E2179 /* ArgoDicoTests */,
+				1580379524B7782F000E2179 /* ArgoDicoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1580377324B7782D000E2179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1580378524B7782E000E2179 /* LaunchScreen.storyboard in Resources */,
+				158037B924B7C806000E2179 /* GoogleService-Info.plist in Resources */,
+				1580378224B7782E000E2179 /* Preview Assets.xcassets in Resources */,
+				1580377F24B7782E000E2179 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580378924B7782F000E2179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580379424B7782F000E2179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		232782F2C1A06AEC92B25DB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArgoDico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F4C882CA136C0355DAA8D77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArgoDico/Pods-ArgoDico-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArgoDico/Pods-ArgoDico-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArgoDico/Pods-ArgoDico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		720AB4DC0F3311214FC70F9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArgoDicoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42FBB573F67BE5DFAB51747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArgoDico-ArgoDicoUITests/Pods-ArgoDico-ArgoDicoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArgoDico-ArgoDicoUITests/Pods-ArgoDico-ArgoDicoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArgoDico-ArgoDicoUITests/Pods-ArgoDico-ArgoDicoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB88933A8877E0794CEE2079 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArgoDico-ArgoDicoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1580377124B7782D000E2179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */,
+				1580377924B7782D000E2179 /* AppDelegate.swift in Sources */,
+				158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */,
+				158037A924B7ADC2000E2179 /* MainView.swift in Sources */,
+				1580377B24B7782D000E2179 /* SceneDelegate.swift in Sources */,
+				158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */,
+				158037AB24B7AE13000E2179 /* DicoItemRow.swift in Sources */,
+				1580377D24B7782D000E2179 /* LoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580378724B7782F000E2179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1580379024B7782F000E2179 /* ArgoDicoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1580379224B7782F000E2179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1580379B24B7782F000E2179 /* ArgoDicoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1580378D24B7782F000E2179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1580377424B7782D000E2179 /* ArgoDico */;
+			targetProxy = 1580378C24B7782F000E2179 /* PBXContainerItemProxy */;
+		};
+		1580379824B7782F000E2179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1580377424B7782D000E2179 /* ArgoDico */;
+			targetProxy = 1580379724B7782F000E2179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1580378324B7782E000E2179 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1580378424B7782E000E2179 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1580379D24B7782F000E2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1580379E24B7782F000E2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		158037A024B7782F000E2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714F77A8D0C5FAA8C676A9EC /* Pods-ArgoDico.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArgoDico/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArgoDico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.argodico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		158037A124B7782F000E2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9021EEE7EE1C326D09C7AE80 /* Pods-ArgoDico.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArgoDico/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArgoDico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.argodico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		158037A324B7782F000E2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31DCE8AD6F2C8409564DA43C /* Pods-ArgoDicoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				INFOPLIST_FILE = ArgoDicoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.ArgoDicoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgoDico.app/ArgoDico";
+			};
+			name = Debug;
+		};
+		158037A424B7782F000E2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 143427177DC865386C078732 /* Pods-ArgoDicoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				INFOPLIST_FILE = ArgoDicoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.ArgoDicoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgoDico.app/ArgoDico";
+			};
+			name = Release;
+		};
+		158037A624B7782F000E2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D6801DDBCD25D5CED2BADE /* Pods-ArgoDico-ArgoDicoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				INFOPLIST_FILE = ArgoDicoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.ArgoDicoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArgoDico;
+			};
+			name = Debug;
+		};
+		158037A724B7782F000E2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB19E336A82FD488FC778AD /* Pods-ArgoDico-ArgoDicoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
+				INFOPLIST_FILE = ArgoDicoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooflexdev.ArgoDicoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArgoDico;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1580377024B7782D000E2179 /* Build configuration list for PBXProject "ArgoDico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1580379D24B7782F000E2179 /* Debug */,
+				1580379E24B7782F000E2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1580379F24B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158037A024B7782F000E2179 /* Debug */,
+				158037A124B7782F000E2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158037A224B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDicoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158037A324B7782F000E2179 /* Debug */,
+				158037A424B7782F000E2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158037A524B7782F000E2179 /* Build configuration list for PBXNativeTarget "ArgoDicoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158037A624B7782F000E2179 /* Debug */,
+				158037A724B7782F000E2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1580376D24B7782D000E2179 /* Project object */;
+}
