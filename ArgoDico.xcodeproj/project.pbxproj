@@ -17,10 +17,15 @@
 		1580379024B7782F000E2179 /* ArgoDicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580378F24B7782F000E2179 /* ArgoDicoTests.swift */; };
 		1580379B24B7782F000E2179 /* ArgoDicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580379A24B7782F000E2179 /* ArgoDicoUITests.swift */; };
 		158037A924B7ADC2000E2179 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037A824B7ADC2000E2179 /* MainView.swift */; };
-		158037AB24B7AE13000E2179 /* DicoItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037AA24B7AE13000E2179 /* DicoItemRow.swift */; };
+		158037AB24B7AE13000E2179 /* DicoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037AA24B7AE13000E2179 /* DicoItemCell.swift */; };
 		158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B024B7AFF1000E2179 /* DicoEntry.swift */; };
 		158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B624B7C4E1000E2179 /* SearchBar.swift */; };
 		158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */; };
+		15E22D9124B8D18500B38FDE /* DicoEntryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9024B8D18500B38FDE /* DicoEntryCellViewModel.swift */; };
+		15E22D9324B8D25C00B38FDE /* DicoEntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9224B8D25C00B38FDE /* DicoEntryListViewModel.swift */; };
+		15E22D9624B9004300B38FDE /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9524B9004300B38FDE /* SessionStore.swift */; };
+		15E22D9824B9009F00B38FDE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9724B9009F00B38FDE /* User.swift */; };
+		15E22D9A24B9150900B38FDE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9924B9150900B38FDE /* SignUpView.swift */; };
 		2AC8E510E2DEC576FB00A9A6 /* Pods_ArgoDico_ArgoDicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9651C78E720722499B5B12C2 /* Pods_ArgoDico_ArgoDicoUITests.framework */; };
 		848D005A81C252457BD92979 /* Pods_ArgoDicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */; };
 		CDF2AF31C80794957848C29E /* Pods_ArgoDico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */; };
@@ -61,10 +66,15 @@
 		1580379A24B7782F000E2179 /* ArgoDicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgoDicoUITests.swift; sourceTree = "<group>"; };
 		1580379C24B7782F000E2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158037A824B7ADC2000E2179 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		158037AA24B7AE13000E2179 /* DicoItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoItemRow.swift; sourceTree = "<group>"; };
+		158037AA24B7AE13000E2179 /* DicoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoItemCell.swift; sourceTree = "<group>"; };
 		158037B024B7AFF1000E2179 /* DicoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntry.swift; sourceTree = "<group>"; };
 		158037B624B7C4E1000E2179 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryRepository.swift; sourceTree = "<group>"; };
+		15E22D9024B8D18500B38FDE /* DicoEntryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryCellViewModel.swift; sourceTree = "<group>"; };
+		15E22D9224B8D25C00B38FDE /* DicoEntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryListViewModel.swift; sourceTree = "<group>"; };
+		15E22D9524B9004300B38FDE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		15E22D9724B9009F00B38FDE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		15E22D9924B9150900B38FDE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1998EC55F4E29B5CAA267A34 /* Pods_ArgoDico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30606595A7D46A8A94EB237B /* Pods_ArgoDicoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgoDicoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCE8AD6F2C8409564DA43C /* Pods-ArgoDicoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgoDicoTests.debug.xcconfig"; path = "Target Support Files/Pods-ArgoDicoTests/Pods-ArgoDicoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,12 +138,12 @@
 		1580377724B7782D000E2179 /* ArgoDico */ = {
 			isa = PBXGroup;
 			children = (
-				158037BD24B7CE3B000E2179 /* ViewModels */,
 				158037BA24B7CB46000E2179 /* Repositories */,
 				158037B524B7B5C5000E2179 /* App */,
 				158037B224B7B220000E2179 /* Utils */,
 				158037AF24B7AFD1000E2179 /* Models */,
 				158037AC24B7AF5C000E2179 /* UI */,
+				158037BD24B7CE3B000E2179 /* ViewModels */,
 				1580377E24B7782E000E2179 /* Assets.xcassets */,
 				1580378324B7782E000E2179 /* LaunchScreen.storyboard */,
 				1580378624B7782E000E2179 /* Info.plist */,
@@ -181,7 +191,7 @@
 		158037AD24B7AF67000E2179 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				158037AA24B7AE13000E2179 /* DicoItemRow.swift */,
+				158037AA24B7AE13000E2179 /* DicoItemCell.swift */,
 				158037B624B7C4E1000E2179 /* SearchBar.swift */,
 			);
 			path = Components;
@@ -192,6 +202,7 @@
 			children = (
 				1580377C24B7782D000E2179 /* LoginView.swift */,
 				158037A824B7ADC2000E2179 /* MainView.swift */,
+				15E22D9924B9150900B38FDE /* SignUpView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				158037B024B7AFF1000E2179 /* DicoEntry.swift */,
+				15E22D9724B9009F00B38FDE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +219,7 @@
 		158037B224B7B220000E2179 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				15E22D9524B9004300B38FDE /* SessionStore.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,6 +244,8 @@
 		158037BD24B7CE3B000E2179 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				15E22D9024B8D18500B38FDE /* DicoEntryCellViewModel.swift */,
+				15E22D9224B8D25C00B38FDE /* DicoEntryListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -270,6 +285,7 @@
 				1580377224B7782D000E2179 /* Frameworks */,
 				1580377324B7782D000E2179 /* Resources */,
 				6F4C882CA136C0355DAA8D77 /* [CP] Embed Pods Frameworks */,
+				15E22D9424B8F87700B38FDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -391,6 +407,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15E22D9424B8F87700B38FDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		232782F2C1A06AEC92B25DB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,11 +535,16 @@
 			files = (
 				158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */,
 				1580377924B7782D000E2179 /* AppDelegate.swift in Sources */,
+				15E22D9324B8D25C00B38FDE /* DicoEntryListViewModel.swift in Sources */,
 				158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */,
 				158037A924B7ADC2000E2179 /* MainView.swift in Sources */,
+				15E22D9124B8D18500B38FDE /* DicoEntryCellViewModel.swift in Sources */,
 				1580377B24B7782D000E2179 /* SceneDelegate.swift in Sources */,
 				158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */,
-				158037AB24B7AE13000E2179 /* DicoItemRow.swift in Sources */,
+				15E22D9A24B9150900B38FDE /* SignUpView.swift in Sources */,
+				15E22D9824B9009F00B38FDE /* User.swift in Sources */,
+				158037AB24B7AE13000E2179 /* DicoItemCell.swift in Sources */,
+				15E22D9624B9004300B38FDE /* SessionStore.swift in Sources */,
 				1580377D24B7782D000E2179 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +716,7 @@
 				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArgoDico/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,6 +738,7 @@
 				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArgoDico/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

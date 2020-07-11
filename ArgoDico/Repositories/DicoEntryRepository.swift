@@ -15,13 +15,27 @@ class DicoEntryRepository: ObservableObject {
     
     @Published var dicoEntries = [DicoEntry]()
     
+    init() {
+        loadData()
+    }
+    
     func loadData() {
-        db.collection("dicoEntries").addSnapshotListener { (querySnapshot, error) in
+        db.collection("dicoEntries")
+        .order(by: "createdOn")
+            .addSnapshotListener { (querySnapshot, error) in
             if let querySnapshot = querySnapshot {
                 self.dicoEntries = querySnapshot.documents.compactMap { document in
                     try? document.data(as: DicoEntry.self)
                 }
             }
+        }
+    }
+    
+    func addDicoEntry(_ dicoEntry: DicoEntry) {
+        do {
+            let _ = try db.collection("dicoEntries").addDocument(from: dicoEntry)
+        } catch {
+            //TODO: Display Pop-Up
         }
     }
 }

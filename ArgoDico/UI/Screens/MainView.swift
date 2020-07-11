@@ -9,25 +9,51 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject var session: SessionStore
+    
+    @ObservedObject var dicoItemsVM = DicoEntryListViewModel()
+    
     @State private var searchText = ""
+    @State private var isSignedOut = false
     let dicoItems = testDataItems
+    
+    func getUser () {
+        session.listen()
+    }
+    
+    func signOut() {
+        self.isSignedOut = session.signOut()
+    }
+    
     var body: some View {
-        
         VStack(alignment: .center, spacing: 40) {
             
-            SearchBar(text: $searchText)
-                .padding(.top)
-                     
-            List(dicoItems.filter({ searchText.isEmpty ? true : $0.word.contains(searchText) })) { item in
-                Text(item.word)
-
-               }
-        }
+            if (session.session != nil) {
+                NavigationLink(destination: LoginView(), isActive: $isSignedOut) { EmptyView() }
+                Button(action: signOut) {
+                    Text("Sign Out")
+                }
+                SearchBar(text: $searchText)
+                    .padding(.top)
+                
+                List(dicoItemsVM.dicoEntryCellViewModels.filter({ searchText.isEmpty ? true : $0.dicoEntry.word.contains(searchText) })) { dicoItemsCellVM in
+                    DicoItemCell(dicoItemsCellVM: dicoItemsCellVM)
+                    
+                }
+            } else {
+                LoginView()
+            }
+            
+        }.onAppear(perform: getUser)
     }
 }
+
+#if DEBUG
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environmentObject(SessionStore())
     }
 }
+#endif

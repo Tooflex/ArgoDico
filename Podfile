@@ -14,6 +14,8 @@ target 'ArgoDico' do
   pod 'Firebase/Firestore'
   # add the Firebase pod for Swift
   pod 'FirebaseFirestoreSwift'
+  #
+  pod 'Firebase/Crashlytics'
 
   target 'ArgoDicoTests' do
     inherit! :search_paths
