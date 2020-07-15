@@ -85,13 +85,14 @@ struct LoginView: View {
                     }.isDetailLink(false)
                 }
                 Spacer()
+                // Socials buttons
                 Text("Sign Up with social networks")
                 HStack(alignment: .center, spacing: 20) {
-                    Image("facebook")
+                    Image("apple black logo")
                     Image("google-plus")
-                    Image("twitter")
                 }
                 Text("Created by Hip Hop Stories FR - 2020")
+                Spacer()
             }
         }.navigationViewStyle(StackNavigationViewStyle())
         
