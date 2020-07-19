@@ -21,6 +21,8 @@
 		158037B124B7AFF1000E2179 /* DicoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B024B7AFF1000E2179 /* DicoEntry.swift */; };
 		158037B724B7C4E1000E2179 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037B624B7C4E1000E2179 /* SearchBar.swift */; };
 		158037BC24B7CB60000E2179 /* DicoEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */; };
+		15B9FB7D24C49016005AF179 /* DicoEntryModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9FB7C24C49016005AF179 /* DicoEntryModelTest.swift */; };
+		15B9FB7F24C4939E005AF179 /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9FB7E24C4939E005AF179 /* UserModelTest.swift */; };
 		15E22D9124B8D18500B38FDE /* DicoEntryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9024B8D18500B38FDE /* DicoEntryCellViewModel.swift */; };
 		15E22D9324B8D25C00B38FDE /* DicoEntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9224B8D25C00B38FDE /* DicoEntryListViewModel.swift */; };
 		15E22D9624B9004300B38FDE /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E22D9524B9004300B38FDE /* SessionStore.swift */; };
@@ -70,6 +72,8 @@
 		158037B024B7AFF1000E2179 /* DicoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntry.swift; sourceTree = "<group>"; };
 		158037B624B7C4E1000E2179 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		158037BB24B7CB60000E2179 /* DicoEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryRepository.swift; sourceTree = "<group>"; };
+		15B9FB7C24C49016005AF179 /* DicoEntryModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryModelTest.swift; sourceTree = "<group>"; };
+		15B9FB7E24C4939E005AF179 /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
 		15E22D9024B8D18500B38FDE /* DicoEntryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryCellViewModel.swift; sourceTree = "<group>"; };
 		15E22D9224B8D25C00B38FDE /* DicoEntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoEntryListViewModel.swift; sourceTree = "<group>"; };
 		15E22D9524B9004300B38FDE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				1580378F24B7782F000E2179 /* ArgoDicoTests.swift */,
 				1580379124B7782F000E2179 /* Info.plist */,
+				15B9FB7C24C49016005AF179 /* DicoEntryModelTest.swift */,
+				15B9FB7E24C4939E005AF179 /* UserModelTest.swift */,
 			);
 			path = ArgoDicoTests;
 			sourceTree = "<group>";
@@ -554,6 +560,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1580379024B7782F000E2179 /* ArgoDicoTests.swift in Sources */,
+				15B9FB7D24C49016005AF179 /* DicoEntryModelTest.swift in Sources */,
+				15B9FB7F24C4939E005AF179 /* UserModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
