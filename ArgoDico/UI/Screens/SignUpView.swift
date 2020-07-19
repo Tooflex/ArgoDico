@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 
 struct SignUpView: View {
@@ -18,10 +19,12 @@ struct SignUpView: View {
     @State private var emailAddress = ""
     @State private var newPassword = ""
     @State private var confirmedPassword = ""
+    @State private var errorMessage = ""
     
     @State private var loading = false
     @State private var error = false
     @State private var isSignUp = false
+    @State private var isError = false
     
     
     private func isEmailValid() -> Bool {
@@ -38,13 +41,34 @@ struct SignUpView: View {
         return false
     }
     
+    fileprivate func handleAuthErrors(_ error: Error?) {
+        if let errCode = AuthErrorCode(rawValue: error!._code) {
+            
+            switch errCode {
+            case .invalidEmail:
+                self.errorMessage = "Email is invalid"
+            case .emailAlreadyInUse:
+                self.errorMessage = "Email already in use"
+            case .missingEmail:
+                self.errorMessage = "Email is missing"
+            case .weakPassword:
+                self.errorMessage = "Password should be at least 6 characters"
+            default:
+                self.errorMessage = "\(error.debugDescription)"
+            }
+            self.isError = true
+        }
+    }
+    
     func signUp() {
         loading = true
         error = false
         session.signUp(email: emailAddress, password: newPassword) { (authDataResult, error) in
             self.loading = false
             guard let user = authDataResult?.user, error == nil else {
-                print(error!.localizedDescription)
+                
+                self.handleAuthErrors(error)
+                
                 return
             }
             print("\(user.email!) created")
@@ -78,7 +102,9 @@ struct SignUpView: View {
                       message: Text("You can now Log In"),
                       dismissButton: .default(Text("OK")) { self.presentationMode.wrappedValue.dismiss()
                     })
-            })
+            }).alert(isPresented: $isError) {
+                Alert(title: Text("Error while Sign Up"), message: Text("\(errorMessage)"), dismissButton: .default(Text("OK")))
+            }
                 .navigationBarTitle(Text("Sign Up"))
         }.navigationViewStyle(StackNavigationViewStyle())
     }
